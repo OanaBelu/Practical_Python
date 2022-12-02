@@ -1,0 +1,20 @@
+# Lets' create the game rock, paper,scissors
+# The computer will play against the user
+
+import random
+
+computer_choice = random.choice(['rock ', 'paper', 'scissors'])
+
+print(computer_choice)
+user_choice = input("Do you want - rock ,paper or scissors?\n")
+
+if computer_choice == user_choice:
+    print('TIE')
+elif user_choice == 'rock' and computer_choice == 'scissors':
+    print('WIN, the computer had ' + computer_choice)
+elif user_choice == 'paper' and computer_choice == 'rock':
+    print('WIN, the computer had ' + computer_choice)
+elif user_choice == 'scissors' and computer_choice == 'paper':
+    print('WIN, the computer had ' + computer_choice)
+else:
+    print('You lose :( ..  Computer wins :) ')
